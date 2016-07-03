@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import SearchUser from './SearchUser';
 import UserInfo from './UserInfo';
 
-
 /**
  * Main UI component
  * 

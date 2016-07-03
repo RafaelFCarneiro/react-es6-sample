@@ -2,32 +2,32 @@ import React, { Component } from 'react';
 import UserRepos from './UserRepos';
 
 /**
- * User info
- * 
- * @param {any} props
+ * UserInfo
+ *
+ * @param {any} { user, repos }
  * @returns
  */
-const UserInfo = (props) => {
-  let userInfo = props.user ?
+const UserInfo = ({ user, repos }) => {
+  let userInfo = user ?
       (            
       <div className="row">
         <div className="col=lg-4">
           <img className="img-circle" 
-            src={props.user.avatar_url} 
+            src={user.avatar_url} 
             alt="avatar"
             width="140"
             height="140" />
-          <h2>{props.user.login}</h2>
-          <p>{props.user.name}</p>
-          <p>Followers: {props.user.webfollowers} / Following: {props.user.following}</p>
+          <h2>{user.login}</h2>
+          <p>{user.name}</p>
+          <p>Followers: {user.webfollowers} / Following: {user.following}</p>
           <p><a 
             className="btn btn-default" 
-            href={props.user.html_url} 
+            href={user.html_url} 
             role="button">View details</a> 
           </p>
         </div>
         <div className="col-lg-8">
-          <UserRepos repos={props.repos} />
+          <UserRepos repos={repos} />
         </div>        
       </div>        
     ) : null;

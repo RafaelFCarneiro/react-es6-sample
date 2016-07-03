@@ -57,7 +57,7 @@ class SearchUser extends Component {
                   type="text"
                   ref="username"
                   className="form-control"
-                  placeholder="Ex: myname"
+                  placeholder="Ex: myuser"
               />                                                                
             </div>
             <button

@@ -8,7 +8,7 @@ const GitHubUser = {
    * @returns
    */
   getByUsername(username) {
-    return axios.get('https://api.github.com/users/' + username);
+    return axios.get(`https://api.github.com/users/${username}`);
   },
   /**
    * 
@@ -17,8 +17,8 @@ const GitHubUser = {
    * @returns
    */
   getReposByUsername(username) {
-    return axios.get('http://api.github.com/users/' + username + '/repos');
+    return axios.get(`http://api.github.com/users/${username}/repos`);
   }
 };
 
-export default GitHubUser
+export default GitHubUser;

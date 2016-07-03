@@ -38,7 +38,7 @@ export default class UserRepos extends Component {
      * @param {any} key
      * @returns
      */
-    let repos = this.props.repos.map((repo, key) => {
+    const repos = this.props.repos.map((repo, key) => {
       return(
         <div key={key} className="thumbnail">
           <div className="caption">
